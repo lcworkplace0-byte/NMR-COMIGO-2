@@ -1,0 +1,12 @@
+<style>
+    #conteudo {
+    background-color: #6a2ca3;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    text-align: center;
+    }
+</style>

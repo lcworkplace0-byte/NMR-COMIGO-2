@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namora comigo</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="conteudo">
+        <h2 id="txt1">Aceita namorar comigo?</h2>
+        <button id="btsim" onclick="sim()" class="btn">SIM</button>
+        <button id="btnao" onmouseover="desvia()" class="btn">NÃO</button>
+    </div>
+    <div id="f1" class="fnd">
+        
+    </div>
+    <div class="fnd" id="f2">
+
+    </div>
+    <div class="fnd" id="f3">
+
+    </div>
+    <div class="fnd" id="f4">
+
+    </div>
+    <div class="fnd" id="f5">
+
+    </div>
+    <div class="fnd" id="f6">
+
+    </div>
+    <div class="fnd" id="f7">
+
+    </div>
+    <div class="fnd" id="f8">
+
+    </div>
+    <div class="fnd" id="f9">
+
+    </div>
+    <div class="fnd" id="f10">
+
+    </div>
+</body>
+<style>
+    body{
+        background-image: url(img/foto\ 5.jpg);
+    }
+    #conteudo {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    }
+    #txt1 {
+        border: 10;
+        border-radius: 100;
+    }
+    .btn {
+        width: 100px;
+        height: 30px;
+        border: 10;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    .fnd{
+        width: 300px;
+        height: 300px;
+        background-color: lightgray;
+        border: 10 solid black;
+        border-radius: 10px;
+        position: relative;
+        display: inline-block;
+    }
+    #f1{
+        background-image: url(img/foto\ 1.jpg);
+
+    }
+    #f2{
+        background-image: url(img/foto\ 2.jpg);
+    }
+    #f3{
+        background-image: url(img/foto\ 3.jpg);
+    }
+    #f4{
+        background-image: url(img/foto\ 4.jpg);
+    }
+    #f5{
+        background-image: url(img/foto\ 5.jpg);
+    }
+    #f6{
+        background-image: url(img/foto\ 6.jpg);
+    }
+    #f7{
+        background-image: url(img/foto\ 7.jpg);
+    }
+    #f8{
+        background-image: url(img/foto\ 8.jpg);
+    }
+    #f9{
+        background-image: url(img/foto\ 9.jpg);
+    }
+    #f10{
+        background-image: url(img/foto\ 10.jpg);
+    }
+</style>
+<script>
+    function sim(){ 
+        alert("VOCÊ É MINHA NAMORADA, PERFEITA! EU TE AMO AMOR ❤️")
+    }
+    function desvia(){
+        var btn = document.querySelector("#btnao") ;
+        console.log(btn);
+        btn.style.position = 'relative'
+        btn.style.bottom = geraPosicao(30,70);
+        btn.style.left = geraPosicao(30,70);
+        console.log("opa...desviei")
+    }
+    function geraPosicao(min, max) {
+    return (Math.random() * (max - min) + min) + "%";
+}
+</script>
+</html>
